@@ -25,6 +25,14 @@ class Song
     @@count 
   end 
   
+  def self.genres 
+    @@genres.uniq
+  end 
+  
+  def self.artists 
+    @@artists.uniq
+  end 
+  
   def self.genre_count 
     @@genres.each do |genre|
       if !@@genre_hash.has_key?(genre)
@@ -32,10 +40,6 @@ class Song
       end
     end 
     @@genre_hash 
-  end 
-  
-  def self.artists 
-    @@artists.uniq
   end 
   
 end 
