@@ -44,7 +44,7 @@ class Song
     @@genre_hash 
   end 
   
-  def self artist_count 
+  def self.artist_count 
     @@artists.each do |artist|
       if !@@artist_hash.has_key?(artist)
         @@artist_hash[artist] = @@artists.count(artist)
