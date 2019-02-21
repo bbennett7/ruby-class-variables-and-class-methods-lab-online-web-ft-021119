@@ -9,7 +9,7 @@ class Song
   
   @@genre_hash = {}
   
-  @@artists_hash = {}
+  @@artist_hash = {}
   
   def initialize(name, artist, genre)
    @@count += 1 
