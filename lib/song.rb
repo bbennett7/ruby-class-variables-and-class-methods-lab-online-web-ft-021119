@@ -9,8 +9,6 @@ class Song
   
   @@genre_hash = {}
   
-  @@artist_hash = {}
-  
   def initialize(name, artist, genre)
    @@count += 1 
    
@@ -37,12 +35,9 @@ class Song
   end 
   
   def self.artists 
-    @@artists.each do |artist|
-      if !@@artist_hash.has_key?(artist)
-        @@artist_hash[artist] = @@artists.count(artist)
-      end 
+    @@artists.collect do ||
+      
     end 
-    @@artist_hash 
   end 
   
 end 
