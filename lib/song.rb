@@ -7,7 +7,7 @@ class Song
   
   @@genres = []
   
-  @@genre_hash == {}
+  @@genre_hash = {}
   
   def initialize(name, artist, genre)
    @@count += 1 
