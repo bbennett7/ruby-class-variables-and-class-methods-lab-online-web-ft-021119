@@ -35,9 +35,7 @@ class Song
   end 
   
   def self.artists 
-    @@artists.collect do ||
-      
-    end 
+    @@artists.uniq
   end 
   
 end 
